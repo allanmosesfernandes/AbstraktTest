@@ -17,7 +17,7 @@ const index = (data) => {
       <main className="container flex flex-col">
         <section>
           {/* Main Title Copy */}
-          <div className="ml-6 md:ml-24 my-4">
+          <div className="ml-6 md:ml-24 my-4 ">
             <h2 className="font-satoshiBold text-6xl mb-2">
               Power your procurement.{" "}
             </h2>
@@ -25,7 +25,7 @@ const index = (data) => {
               Accelerate your public sector projects.
             </h2>
           </div>
-          <div className="bg-scapeGray100 flex flex-col px-6  md:px-20 mx-0 md:mx-6">
+          <div className="bg-scapeGray100 flex flex-col pl-6  md:px-20 mx-0 md:mx-6">
             {/* Body Copy  */}
             <p className="text-scapeGray700 text-sm w-[100%] lg:w-[60%] font-satoshi leading-[1.2rem] py-6">
               Your go-to suite of compliant, direct award, not-for-profit,
@@ -40,7 +40,6 @@ const index = (data) => {
             <ProjectCards projects={projects} />
 
             {/* Cards Grid */}
-
           </div>
           {/* Latest Updates */}
           <div className="flex flex-col-reverse md:flex-row md:pl-20 mx-0 md:mx-6 mb-10 relative gap-8">

@@ -3,16 +3,16 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Right from "../../assets/images/homepage/right.svg";
 
 const borderColors = [
-  "scapeYellow400",
-  "scapeGreen500",
-  "scapeBlue600",
-  "scapePurple600",
+  "border-scapeYellow400",
+  "border-scapeGreen500",
+  "border-scapeBlue600",
+  "border-scapePurple600",
 ];
 
 function ProjectCards(props) {
   const { projects } = props;
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-16 grid-flow-col">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:mb-16 md:mb-10 ">
       {projects.map((project, index) => (
         <div
           key={project.id}
@@ -25,7 +25,7 @@ function ProjectCards(props) {
           />
           {/* Card copy */}
           <div
-            className={`flex flex-col z-10 bg-white text-sm px-4 py-6 ease-linear duration-300 border-${borderColors[index]} group-hover:border-opacity-50 border-t-[8px]`}
+            className={`flex flex-col z-10 bg-white text-sm px-4 py-6 ease-linear duration-300 ${borderColors[index]} group-hover:border-opacity-50 border-t-[8px]`}
           >
             <p className="w-[60%] font-satoshiBold mb-3">{project.title}</p>
             <p className="flex-grow">{project.description}</p>
