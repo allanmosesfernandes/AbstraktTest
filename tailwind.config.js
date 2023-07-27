@@ -13,7 +13,7 @@ module.exports = {
       satoshiBold: ["Satoshi-Bold", "sans-serif"],
     },
     screens: {
-      xxl: "1536px",
+      "2xl": "1536px",
       xl: "1280px",
       lg: "1024px",
       md: "768px",
