@@ -10,27 +10,27 @@ function Navbar() {
       <nav className="md:flex hidden p-5">
         {/* Logo */}
         <div className="flex items-center ">
-          <img src={Logo} alt="logo" className="" />
+          <img src={Logo} alt="logo" />
         </div>
         {/* Links */}
-        <div className="flex items-center gap-8 ml-auto font-satoshiBold">
-          <Link to="/" className="hover:text-scapeGray300">
+        <div className="navbar-links">
+          <Link to="/">
             Frameworks
           </Link>
-          <Link to="/" className="hover:text-scapeGray300">
+          <Link to="/">
             Leading Procurement
           </Link>
-          <Link to="/" className="hover:text-scapeGray300">
+          <Link to="/">
             Social Value
           </Link>
 
-          <Link to="/" className="hover:text-scapeGray300">
+          <Link to="/">
             Sustainability
           </Link>
-          <Link to="/" className="hover:text-scapeGray300">
+          <Link to="/">
             News & Media
           </Link>
-          <Link to="/" className="hover:text-scapeGray300">
+          <Link to="/">
             About
           </Link>
         </div>
