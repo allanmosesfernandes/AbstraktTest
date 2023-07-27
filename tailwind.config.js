@@ -12,6 +12,14 @@ module.exports = {
       satoshiLight: ["Satoshi-Light", "sans-serif"],
       satoshiBold: ["Satoshi-Bold", "sans-serif"],
     },
+    screens: {
+      xxl: "15536",
+      xl: "1280px",
+      lg: "1024px",
+      md: "768px",
+      sm: "640px",
+      xs: "480px",
+    },
     extend: {
       colors: {
         scapeGray100: "#F4F5F7",

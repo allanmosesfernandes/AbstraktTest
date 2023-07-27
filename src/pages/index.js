@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Navbar from "../components/Navbar/Navbar";
 import CardImage from "../assets/images/homepage/card-image.png";
 import Right from "../assets/images/homepage/right.svg";
@@ -136,9 +136,9 @@ const index = () => (
           </div>
         </div>
         {/* Latest Updates */}
-        <div className="flex flex-row md:pl-20 mx-0 md:mx-6 mb-10 relative gap-8">
+        <div className="flex flex-col-reverse md:flex-row md:pl-20 mx-0 md:mx-6 mb-10 relative gap-8">
           {/* Left Side */}
-          <div className="flex flex-row border-b-2 border-gray-70  items-center gap-6 w-[75%]">
+          <div className="flex lg:flex-row flex-col border-b-2 border-gray-70  md:items-center gap-6 w-[100%] md:w-[75%]">
             <p className="bg-scapeGray700 text-white py-2 px-4 font-satoshi text-sm 0">
               {" "}
               Latest updates{" "}
@@ -151,7 +151,7 @@ const index = () => (
             </p>
           </div>
           {/* Right Side */}
-          <div className="flex flex-col bg-scapeBlue900 w-[30%] p-4 font-satoshi gap-6 mt-[-2rem]">
+          <div className="flex flex-col bg-scapeBlue900 w-[100%] md:w-[30%] p-4 font-satoshi gap-6 mt-[-2rem]">
             <p className="text-white">Prefer to speak with someone at SCAPE?</p>
             <Link
               to="/"
@@ -170,3 +170,19 @@ const index = () => (
 );
 
 export default index;
+export const query = graphql`
+  query MyQuery {
+    allSanityProjects(limit: 4) {
+      nodes {
+        id
+        title
+        description
+        image {
+          asset {
+            gatsbyImage(height: 300)
+          }
+        }
+      }
+    }
+  }
+`;
