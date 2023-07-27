@@ -12,11 +12,11 @@ const borderColors = [
 function ProjectCards(props) {
   const { projects } = props;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:mb-16 md:mb-10 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:mb-16 md:mb-10 w-[80%]">
       {projects.map((project, index) => (
         <div
           key={project.id}
-          className="group flex flex-col font-satoshi carder overflow-hidden min-h-[375px]"
+          className="group flex flex-col font-satoshi carder overflow-hidden md:min-h-[330px] min-h-[275px]"
         >
           <GatsbyImage
             image={project.image.asset.gatsbyImage}

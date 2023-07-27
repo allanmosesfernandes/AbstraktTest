@@ -23,6 +23,32 @@
     src: url("../assets/fonts/Satoshi-Bold.otf") format("opentype");
   }
 
+  /* Initial state */
+  .bg {
+    background-image: url("../assets/images/homepage/swoosh.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    background-position: bottom left;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -20%;
+    transform-origin: bottom left; /* Set the transform origin to the bottom left corner */
+    animation: expandBackground 2s ease-out forwards; /* Adjust the animation duration as needed */
+  }
+
+  /* Animation */
+  @keyframes expandBackground {
+    0% {
+      transform: scale(0); /* Start with 0% scale */
+    }
+    100% {
+      transform: scale(1); /* End with 100% scale */
+    }
+  }
+
   .card-arrow {
     @apply bg-black rounded-full w-10 h-10 flex items-center ml-auto justify-center;
   }
@@ -30,7 +56,11 @@
     @apply flex items-center gap-8 ml-auto font-satoshiBold;
   }
   .navbar-links a:hover {
-    @apply text-scapeGray400
+    @apply text-scapeGray400;
+  }
+
+  .menu-items a {
+    @apply flex items-center justify-between w-full py-3 text-center px-6 text-sm;
   }
   /* animations */
   /* animations */
@@ -55,5 +85,77 @@
   .contacter:hover span {
     margin-left: 5px;
     transition: all 300ms ease-in-out;
+  }
+
+  .menu__custom {
+    position: absolute;
+    transform: translateY(-100%);
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+  .menu__custom.active {
+    transform: translateY(0);
+    transition: all 0.2s ease;
+  }
+  .hamburger-icon {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: all 0.35s;
+    position: relative;
+    z-index: 999;
+    margin-left: auto;
+    background: #221c34;
+    border-radius: 50%;
+  }
+
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 32%;
+    left: 26%;
+    width: 24px;
+    height: 1.5px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.3s;
+  }
+
+  .hamburger-middle {
+    transform: translateY(7px);
+    width: 18px;
+  }
+
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  .open .hamburger-middle {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+    opacity: 1;
+    width: 24px;
+  }
+
+  .open .hamburger-bottom {
+    opacity: 0;
+  }
+
+  .no-scroll {
+    overflow: hidden;
   }
 }

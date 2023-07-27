@@ -14,20 +14,22 @@ const index = (data) => {
   return (
     <>
       <Navbar />
-      <main className="container flex flex-col">
+      <main className="container flex flex-col relative z-10">
+        <div className="bg" />
+
         <section>
           {/* Main Title Copy */}
-          <div className="ml-6 md:ml-24 my-4 ">
-            <h2 className="font-satoshiBold text-6xl mb-2">
+          <div className="ml-6 md:ml-20 my-4 ">
+            <h2 className="font-satoshiBold lg:text-6xl text-4xl mb-2">
               Power your procurement.{" "}
             </h2>
-            <h2 className="font-satoshi text-6xl">
+            <h2 className="font-satoshi lg:text-6xl text-4xl">
               Accelerate your public sector projects.
             </h2>
           </div>
-          <div className="bg-scapeGray100 flex flex-col pl-6  md:px-20 mx-0 md:mx-6">
+          <div className="bg-scapeGray100 flex flex-col pl-2 md:pl-14 mx-0 md:mx-6 mt-[-1rem] leading-normal">
             {/* Body Copy  */}
-            <p className="text-scapeGray700 text-sm w-[100%] lg:w-[60%] font-satoshi leading-[1.2rem] py-6">
+            <p className="text-scapeGray700 text-md w-[100%] lg:w-[60%] font-satoshi py-6">
               Your go-to suite of compliant, direct award, not-for-profit,
               public sector procurement frameworks. SCAPE delivers high quality
               outcomes for you sustainably, at pace, and with social value and
@@ -57,7 +59,7 @@ const index = (data) => {
               </p>
             </div>
             {/* Right Side */}
-            <div className="flex flex-col bg-scapeBlue900 w-[100%] md:w-[30%] p-4 font-satoshi gap-6 mt-[-2rem]">
+            <div className="flex flex-col bg-scapeBlue900 w-[100%] md:w-[30%] p-4 font-satoshi gap-6 mt-[-4rem]">
               <p className="text-white">
                 Prefer to speak with someone at SCAPE?
               </p>
@@ -88,7 +90,7 @@ export const query = graphql`
         description
         image {
           asset {
-            gatsbyImage(height: 400)
+            gatsbyImage(height: 300)
           }
         }
       }
