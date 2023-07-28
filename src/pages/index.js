@@ -6,6 +6,7 @@ import Right from "../assets/images/homepage/right.svg";
 import RightArrow from "../assets/images/homepage/Shape.svg";
 import ArrowT from "../assets/images/nav/arrow.svg";
 import ProjectCards from "../components/Navbar/ProjectCards";
+import SEO from "../components/Navbar/SEO";
 
 const index = (data) => {
   /* Fetch projects from query and pass it as props */
@@ -13,6 +14,7 @@ const index = (data) => {
 
   return (
     <>
+      <SEO />
       <Navbar />
       <main className="container flex flex-col relative z-10">
         <div className="bg" />
@@ -97,3 +99,17 @@ export const query = graphql`
     }
   }
 `;
+
+export function Head() {
+  return (
+    <>
+      <title>Abstrakt Scape</title>
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+    </>
+  );
+}

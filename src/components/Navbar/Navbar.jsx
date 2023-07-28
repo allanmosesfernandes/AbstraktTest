@@ -11,17 +11,14 @@ function Navbar() {
   const toggleMenu = () => {
     setHamburger(!hamburger);
   };
-  useEffect(() => {
-    if (hamburger) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
 
+  useEffect(() => {
+    document.body.classList.toggle("no-scroll", hamburger);
     return () => {
       document.body.classList.remove("no-scroll");
     };
   }, [hamburger]);
+
   return (
     <>
       <NavbarUtil />
@@ -122,7 +119,7 @@ function Navbar() {
               <input
                 type="text"
                 placeholder="Search"
-                className="w-full border-scapeGray400 border-[1px] rounded-full p-3 bg-transparent"
+                className="w-full border-scapeGray400 border-[1px] rounded-full p-3 bg-transparent focus:outline-none focus:border-scapeBlue500"
               />
               <span>
                 <img
