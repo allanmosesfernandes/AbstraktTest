@@ -12,16 +12,16 @@ const borderColors = [
 function ProjectCards(props) {
   const { projects } = props;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:mb-16 md:mb-10 w-[80%]">
+    <div className="flex overflow-x-auto md:grid md:overflow-hidden grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:mb-16 md:mb-10 mb-20 w-[100%] md:w-[80%] z-10">
       {projects.map((project, index) => (
         <div
           key={project.id}
-          className="group flex flex-col font-satoshi carder overflow-hidden md:min-h-[330px] min-h-[275px]"
+          className="group flex-col font-satoshi carder overflow-hidden md:min-h-[370px] min-h-[275px] cardSwipe"
         >
           <GatsbyImage
             image={project.image.asset.gatsbyImage}
             alt={project.title}
-            className="card__image group-hover:scale-110 ease-linear duration-300 z-1"
+            className="card__image group-hover:scale-110 ease-linear duration-300 z-1 w-full"
           />
           {/* Card copy */}
           <div

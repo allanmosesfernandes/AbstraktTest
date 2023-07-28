@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import NavbarUtil from "./NavbarUtil";
-import Logo from "../../assets/images/nav/logo.png";
+import Logo from "../../assets/images/nav/logoo.svg";
 import Arrow from "../../assets/images/nav/mobile-arrow.svg";
 import Search from "../../assets/images/nav/search.svg";
 import ArrowBlack from "../../assets/images/nav/contact.svg";
@@ -110,7 +110,7 @@ function Navbar() {
             </Link>
           </div>
           {/* Mobile Menu Base */}
-          <div className="bg-scapeBlue900 text-scapeGray400 flex flex-col justify-start items-start px-6 font-satoshi space-y-4 pt-4 h-full">
+          <div className="bg-scapeBlue900 text-scapeGray400 flex flex-col justify-evenly items-start px-6 font-satoshi space-y-4 pt-4 h-full">
             <Link to="/" className="block text-center">
               Live Procurement
             </Link>
@@ -125,7 +125,11 @@ function Navbar() {
                 className="w-full border-scapeGray400 border-[1px] rounded-full p-3 bg-transparent"
               />
               <span>
-                <img src={Search} alt="arrow" className="ml-6 flex absolute right-4 top-4" />
+                <img
+                  src={Search}
+                  alt="arrow"
+                  className="ml-6 flex absolute right-4 top-4"
+                />
               </span>
             </div>
 
