@@ -107,7 +107,7 @@ function Navbar() {
             </Link>
           </div>
           {/* Mobile Menu Base */}
-          <div className="bg-scapeBlue900 text-scapeGray400 flex flex-col justify-evenly items-start px-6 font-satoshi space-y-4 pt-4 h-full">
+          <div className="bg-scapeBlue900 text-scapeGray400 flex flex-col justify-evenly items-start px-6 font-satoshi space-y-4 pt-4 h-[80%]">
             <Link to="/" className="block text-center">
               Live Procurement
             </Link>

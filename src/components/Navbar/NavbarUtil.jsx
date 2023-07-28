@@ -18,7 +18,7 @@ function NavbarUtil() {
           <input
             type="text"
             placeholder="Search"
-            className="focus:outline-none border-scapeGray400 focus:border-scapeBlue500 w-[100px] rounded-full p-3 bg-transparent"
+            className="focus:outline-noney border-scapeGray400 focus:border-scapeBlue500 w-[100px] rounded-full p-3 bg-transparent"
           />
           <span>
             <img
