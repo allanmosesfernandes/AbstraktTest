@@ -12,15 +12,18 @@ function WhyScape() {
       {/* Why Scape Wrapper */}
       <div className="flex flex-col bg-scapeGray100 whyscapeBG pl-4 md:pl-20">
         {/* Image Container */}
-        <div className="flex flex-row mt-14 mb-10 gap-6 ">
-          <div><img src={Cover} alt="Cover" className="" /></div>
-          <div><img src={Rect} alt="Rect" className="" /></div>
+        <div className="flex flex-row mt-14 mb-10 md:gap-6 gap-2 max-h-[400px] lg:min-h-0 min-h-[200px] overflow-hidden">
+          <div className="md:w-[80%] w-[90%]">
+            <img src={Cover} alt="Cover" className="object-cover w-full h-full" />
+          </div>
+          <div className="md:w-[20%] w-[10%]">
+            <img src={Rect} alt="Rect" className="object-cover h-full" />
+          </div>
         </div>
         {/* Why Scape Copy */}
-        <div className="font-satoshi w-[60%] flex flex-col mx-auto">
+        <div className="font-satoshi md:w-[60%] w-full flex flex-col mx-auto">
           <p className="text-scapeBlue900 leading-46 text-3xl mb-5">
-            SCAPE is a public sector owned, not-for profit <br />
-            organisation.
+            SCAPE is a public sector owned, not-for profit organisation.
           </p>
           <p className="bodycopy">
             Any surplus income generated is returned to the public sector via
@@ -41,13 +44,15 @@ function WhyScape() {
             here to power your procurement and accelerate your projects.
           </p>
 
-          <button className="rounded-full flex items-center bg-scapeBlue900 text-white font-satoshiBold text-xl py-4 px-8 mb-20 w-fit" type="button">
+          <button
+            className="rounded-full flex items-center bg-scapeBlue900 text-white font-satoshiBold text-sm md:text-xl py-4 px-8 mb-20 w-fit"
+            type="button"
+          >
             Who we are
             <span>
               <img src={ArrowRight} alt="arrow" className="ml-6" />
             </span>
           </button>
-
         </div>
       </div>
     </section>

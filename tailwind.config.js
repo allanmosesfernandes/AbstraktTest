@@ -35,6 +35,7 @@ module.exports = {
         scapeGreen500: "#53BBAD",
         scapeBlue500: "#29BDEF",
         scapeBlue600: "#009CBD",
+        scapeBlue700: "#00809B",
         scapeBlue800: "#0C4B66",
         scapeBlue900: "#221C34",
         scapeYellow400: "#FFBB31",

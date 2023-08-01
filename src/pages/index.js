@@ -8,6 +8,8 @@ import ArrowT from "../assets/images/nav/arrow.svg";
 import ProjectCards from "../components/Navbar/ProjectCards";
 import SEO from "../components/Navbar/SEO";
 import WhyScape from "../components/Navbar/WhyScape";
+import RoadToZero from "../components/Navbar/RoadToZero";
+import BuildingFutures from "../components/Navbar/BuildingFutures";
 
 const index = (data) => {
   /* Fetch projects from query and pass it as props */
@@ -79,6 +81,8 @@ const index = (data) => {
         </section>
         {/* Why Scape */}
         <WhyScape />
+        <RoadToZero />
+        <BuildingFutures />
       </main>
     </>
   );
