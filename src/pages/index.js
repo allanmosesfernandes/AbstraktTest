@@ -7,6 +7,7 @@ import RightArrow from "../assets/images/homepage/Shape.svg";
 import ArrowT from "../assets/images/nav/arrow.svg";
 import ProjectCards from "../components/Navbar/ProjectCards";
 import SEO from "../components/Navbar/SEO";
+import WhyScape from "../components/Navbar/WhyScape";
 
 const index = (data) => {
   /* Fetch projects from query and pass it as props */
@@ -16,16 +17,15 @@ const index = (data) => {
     <>
       <SEO />
       <Navbar />
-      <main className="container flex flex-col relative z-10">
+      <main className="flex flex-col relative z-10">
         <div className="bg" />
-
         <section>
           {/* Main Title Copy */}
           <div className="ml-4 md:ml-20 my-4 ">
-            <h2 className="font-satoshiBold lg:text-6xl text-4xl mb-2">
+            <h2 className="font-satoshiBold lg:text-6xl text-4xl mb-2 text-scapeBlue900">
               Power your procurement.{" "}
             </h2>
-            <h2 className="font-satoshi lg:text-6xl text-4xl">
+            <h2 className="font-satoshi lg:text-6xl text-4xl text-scapeBlue900">
               Accelerate your public sector projects.
             </h2>
           </div>
@@ -77,6 +77,8 @@ const index = (data) => {
             </div>
           </div>
         </section>
+        {/* Why Scape */}
+        <WhyScape />
       </main>
     </>
   );

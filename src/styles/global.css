@@ -27,7 +27,7 @@
   }
   /* Swoosh Effect */
   .bg {
-    background-image: url("../assets/images/homepage/swoosh.svg");
+    /* background-image: url("../assets/images/homepage/swoosh.svg"); */
     background-size: cover;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -40,11 +40,22 @@
     transform-origin: bottom left; /* Set the transform origin to the bottom left corner */
     animation: expandBackground 2s ease-out forwards; /* Adjust the animation duration as needed */
   }
-@media only screen and (max-width: 768px) {
-  .bg {
-    top: -60%;
+  .whyscapeBG {
+    background-image: url("../assets/images/why/shapes.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    z-index: 0;
+    width: 100%;
   }
-}
+  .bodycopy {
+    @apply leading-25 text-lg text-scapeGray700 mb-5;
+  }
+  @media only screen and (max-width: 768px) {
+    .bg {
+      top: -60%;
+    }
+  }
   /* Animation */
   @keyframes expandBackground {
     0% {
@@ -168,8 +179,6 @@
     overflow: hidden;
   }
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .cardSwipe {

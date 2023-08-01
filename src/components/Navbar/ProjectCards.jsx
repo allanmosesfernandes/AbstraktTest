@@ -25,10 +25,10 @@ function ProjectCards(props) {
           />
           {/* Card copy */}
           <div
-            className={`flex flex-col z-10 bg-white text-sm px-4 py-6 ease-linear duration-300 ${borderColors[index]} group-hover:border-opacity-50 border-t-[8px]`}
+            className={`flex flex-col z-10 bg-white text-sm px-4 py-6 ease-linear duration-300 ${borderColors[index]} group-hover:border-opacity-50 border-t-[8px] leading-25`}
           >
             <p className="w-[60%] font-satoshiBold mb-3">{project.title}</p>
-            <p className="flex-grow">{project.description}</p>
+            <p className="flex-grow text-scapeGray700">{project.description}</p>
             <div className="relative card-heighterrr">
               {/* Card Arrow */}
               <div className="card-arrow">

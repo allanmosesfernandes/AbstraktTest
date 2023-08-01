@@ -21,6 +21,12 @@ module.exports = {
       xs: "480px",
     },
     extend: {
+      lineHeight: {
+        25: "25px",
+        23: "23px",
+        60: "60px",
+        46: "46px",
+      },
       colors: {
         scapeGray100: "#F4F5F7",
         scapeGray300: "#DFDFE3",
