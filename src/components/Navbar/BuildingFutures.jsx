@@ -1,41 +1,38 @@
-import React, { useRef } from 'react';
-// Import css files
+import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import backbtn from "../../assets/images/carousel/backbtn.svg";
 
 function BuildingFutures() {
-  const sliderRef = useRef(null);
-  const handlePrev = () => {
-    sliderRef.current.slickPrev();
-  };
-  const handleNext = () => {
-    sliderRef.current.slickNext();
-  };
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <button
+        onClick={onClick}
+        type="button"
+        className="carousel__custom__next"
+      >
+        <img src={backbtn} alt="back button" className=" rotate-180" />
+      </button>
+    );
+  }
 
-// Custom Previous Arrow Component
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-}
+  // Custom Previous Arrow Component
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <button
+        onClick={onClick}
+        type="button"
+        className="carousel__custom__prev"
+      >
+        <img src={backbtn} alt="back button" className="" />
+      </button>
+    );
+  }
+
   const settings = {
-    dots: true,
     infinite: true,
     arrows: true,
     speed: 500,
@@ -43,19 +40,24 @@ function SamplePrevArrow(props) {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-  };
-  const slideStyle = {
-    margin: "0 10px", // Adjust the spacing as needed
+    responsive: [
+      {
+        breakpoint: 1024, // Adjust this value as needed for your mobile breakpoint
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="flex flex-row gap-6 items-center">
+    <div className="flex flex-col lg:flex-row gap-6 items-center bg-scapeGray100 ">
       {/* Left Side */}
-      <div className="flex flex-col w-[40%]">
-        <h2 className="pl-4 md:pl-20 font-satoshiBold lg:text-6xl text-4xl text-scapeBlue900 my-10">
+      <div className="flex flex-col lg:w-[40%] w-full pb-20">
+        <h2 className="font-satoshiBold w-full text-4xl text-scapeBlue900 mt-20 block lg:hidden pl-4">
           Building a stronger future
         </h2>
-        <p className="pl-4 md:pl-20 bodycopy text-[16px]">
+        <p className="pl-4 md:pl-20 bodycopy text-[16px] pt-10">
           Fully compliant with EU, UK and Scottish procurement regulations, our
           public sector procurement process selects only the best delivery
           partners available through a robust and rigorous tender process. We’re
@@ -64,53 +66,66 @@ function SamplePrevArrow(props) {
           to delivery is our partner’s extensive local supply chain, ensuring
           the money you invest locally, stays local.
         </p>
-        <p className="bodycopy pl-4 md:pl-20 font-bold text-[17px]">
+        <p className="bodycopy font-satoshiBold pl-4 md:pl-20 font-bold text-[17px] underline decoration-solid text-scapeBlue900">
           How our partners are selected
         </p>
       </div>
       {/* Right Side */}
-      <div className="flex flex-col w-[60%] gap-4">
+      <div className="z-50 flex flex-col lg:w-[60%] w-full gap-4 px-2 md:px-20 mt-0 md:mt-[-5rem] relative">
         <Slider {...settings}>
-          <div
-            className="bg-scapeBlue700 text-white w-[90%] h-300 p-6 "
-            style={slideStyle}
-          >
-            <h3 className="font-satoshiBold text-5xl">600+</h3>
-            <p>public bodies are actively using our services</p>
+          <div className="carousel__div">
+            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+              600
+              <span className="font-satoshiLight">+</span>
+            </h3>
+            <p className="font-satoshiLight my-4 xl:w-[75%] w-full">
+              public bodies are actively using our services
+            </p>
           </div>
-          <div
-            className="bg-scapeBlue700 text-white w-[90%] h-300 p-6"
-            style={slideStyle}
-          >
-            <h3 className="font-satoshiBold text-5xl">95%</h3>
-            <p>of our projects are delivered on time with 99% on budget </p>
+          <div className="carousel__div">
+            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+              95
+              <span className="font-satoshiLight">%</span>
+            </h3>
+            <p className="font-satoshiLight my-4 xl:w-[75%] w-full">
+              of our projects are delivered on time with 99% on budget
+            </p>
           </div>
-          <div
-            className="bg-scapeBlue700 text-white w-[90%] h-300 p-6"
-            style={slideStyle}
-          >
-            <h3 className="font-satoshiBold text-5xl">600+</h3>
-            <p>public bodies are actively using our services</p>
+          <div className="carousel__div">
+            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+              9<span className="font-satoshiLight">/10</span>
+            </h3>
+            <p className="font-satoshiLight my-4 md:w-[75%] w-full">
+              of our clients are really happy with the final project results
+            </p>
           </div>
-
-          <div
-            className="bg-scapeBlue700 text-white w-[90%] h-300 p-6 "
-            style={slideStyle}
-          >
-            <h3 className="font-satoshiBold text-5xl">600+</h3>
-            <p>public bodies are actively using our services</p>
+          <div className="carousel__div">
+            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+              600
+              <span className="font-satoshiLight">+</span>
+            </h3>
+            <p className="font-satoshiLight my-4 md:w-[75%] w-full">
+              public bodies are actively using our services
+            </p>
+          </div>
+          <div className="carousel__div">
+            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+              95
+              <span className="font-satoshiLight">%</span>
+            </h3>
+            <p className="font-satoshiLight my-4 md:w-[75%] w-full">
+              of our projects are delivered on time with 99% on budget
+            </p>
+          </div>
+          <div className="carousel__div">
+            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+              9<span className="font-satoshiLight">/10</span>
+            </h3>
+            <p className="font-satoshiLight my-4 md:w-[75%] w-full">
+              of our clients are really happy with the final project results
+            </p>
           </div>
         </Slider>
-        <div className="controls flex gap-4 my-6">
-          <button onClick={handlePrev} type="button">
-            {/* Add your custom back arrow icon/image here */}
-            Back
-          </button>
-          <button onClick={handleNext} type="button">
-            {/* Add your custom forward arrow icon/image here */}
-            Forward
-          </button>
-        </div>
       </div>
     </div>
   );

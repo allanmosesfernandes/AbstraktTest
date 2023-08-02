@@ -25,7 +25,14 @@
   body {
     overflow-x: hidden;
   }
+  .slick-list {
+    margin: 0 -5px;
+  }
+  .slick-slide > div {
+    padding: 0 5px;
+  }
   /* Swoosh Effect */
+
   .bg {
     /* background-image: url("../assets/images/homepage/swoosh.svg"); */
     background-size: cover;
@@ -49,29 +56,73 @@
     width: 100%;
   }
 
-.slick-slide {
-  margin: 0 10px;
-}
-
   .carouselBG {
     background-image: url("../assets/images/carousel/carousel-bg.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom center;
-    z-index: 0;
+    background-position: center;
+    z-index: -1;
     width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
   }
   .bodycopy {
     @apply leading-25 md:text-lg  text-scapeGray700 mb-5 font-satoshiLight;
   }
+  .slick-track
+{
+    display: flex !important;
+}
 
+.slick-slide
+{
+    height: inherit !important;
+}
+  /* Futures Carousel */
+  .carousel__div {
+    width: 90% !important;
+    min-height: 320px;
+    margin-left: -15px;
+    display: flex;
+    @apply bg-scapeBlue700 text-white p-12;
+  }
+  @media only screen and (max-width: 1024px) {
+    .carousel__div {
+      width: 85% !important;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      height: 150px;
+    }
+  }
   .arrowButtonsCarousel {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #DFDFE3;
+    border: 1px solid #dfdfe3;
     padding: 0.5rem;
   }
+
+  /* Carousel Custom Arrows */
+  .carousel__custom__prev {
+    position: absolute;
+    right: 40px;
+    top: -50px;
+    z-index: 1;
+    z-index: 200;
+  }
+
+  .slick-slide {
+    margin: 0 10px;
+  }
+  .carousel__custom__next {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    z-index: 1000;
+  }
+
   @media only screen and (max-width: 768px) {
     .bg {
       top: -60%;

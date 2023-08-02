@@ -10,6 +10,7 @@ import SEO from "../components/Navbar/SEO";
 import WhyScape from "../components/Navbar/WhyScape";
 import RoadToZero from "../components/Navbar/RoadToZero";
 import BuildingFutures from "../components/Navbar/BuildingFutures";
+import LatestScape from "../components/LatestScape";
 
 const index = (data) => {
   /* Fetch projects from query and pass it as props */
@@ -48,7 +49,7 @@ const index = (data) => {
             {/* Cards Grid */}
           </div>
           {/* Latest Updates */}
-          <div className="flex flex-col-reverse md:flex-row md:pl-20 mx-4 md:mx-6 mb-2 lg:mb-10 relative gap-8">
+          <div className="container flex flex-col-reverse md:flex-row md:pl-20 mx-4 md:mx-6 mb-2 lg:mb-10 relative gap-8">
             {/* Left Side */}
             <div className="flex lg:flex-row flex-col border-b-2 border-gray-70  md:items-center gap-6 w-[100%] md:w-[75%]">
               <p className="bg-scapeGray700 text-white p-4 font-satoshi text-sm 0 w-fit">
@@ -83,6 +84,7 @@ const index = (data) => {
         <WhyScape />
         <RoadToZero />
         <BuildingFutures />
+        <LatestScape />
       </main>
     </>
   );
