@@ -42,7 +42,7 @@ function BuildingFutures() {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1024, // Adjust this value as needed for your mobile breakpoint
+        breakpoint: 1100, // Adjust this value as needed for your mobile breakpoint
         settings: {
           slidesToShow: 2,
         },
@@ -51,12 +51,13 @@ function BuildingFutures() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-6 items-center bg-scapeGray100 ">
+    <div className="flex flex-col lg:flex-row gap-6 items-center bg-scapeGray200 mt-[10rem] relative">
       {/* Left Side */}
+      <h2 className="font-satoshiBold w-full text-3xl xl:text-5xl text-scapeBlue900 block pl-4  md:pl-20 absolute top-[-90px]">
+        Building a <br />
+        stronger future
+      </h2>
       <div className="flex flex-col lg:w-[40%] w-full pb-20">
-        <h2 className="font-satoshiBold w-full text-4xl text-scapeBlue900 mt-20 block lg:hidden pl-4">
-          Building a stronger future
-        </h2>
         <p className="pl-4 md:pl-20 bodycopy text-[16px] pt-10">
           Fully compliant with EU, UK and Scottish procurement regulations, our
           public sector procurement process selects only the best delivery
@@ -71,10 +72,10 @@ function BuildingFutures() {
         </p>
       </div>
       {/* Right Side */}
-      <div className="z-50 flex flex-col lg:w-[60%] w-full gap-4 px-2 md:px-20 mt-0 md:mt-[-5rem] relative">
+      <div className="z-50 flex flex-col lg:w-[60%] w-full gap-4 px-2 md:px-20 lg:mt-[-15rem] md:mt-[-3rem] mt-[-4rem] relative">
         <Slider {...settings}>
           <div className="carousel__div">
-            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+            <h3 className="font-satoshiBold  text-3xl xl:text-5xl">
               600
               <span className="font-satoshiLight">+</span>
             </h3>
@@ -83,7 +84,7 @@ function BuildingFutures() {
             </p>
           </div>
           <div className="carousel__div">
-            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+            <h3 className="font-satoshiBold text-3xl xl:text-5xl">
               95
               <span className="font-satoshiLight">%</span>
             </h3>
@@ -92,36 +93,36 @@ function BuildingFutures() {
             </p>
           </div>
           <div className="carousel__div">
-            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+            <h3 className="font-satoshiBold  text-3xl xl:text-5xl">
               9<span className="font-satoshiLight">/10</span>
             </h3>
-            <p className="font-satoshiLight my-4 md:w-[75%] w-full">
+            <p className="font-satoshiLight my-4 xl:w-[75%] w-full">
               of our clients are really happy with the final project results
             </p>
           </div>
           <div className="carousel__div">
-            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+            <h3 className="font-satoshiBold  text-3xl xl:text-5xl">
               600
               <span className="font-satoshiLight">+</span>
             </h3>
-            <p className="font-satoshiLight my-4 md:w-[75%] w-full">
+            <p className="font-satoshiLight my-4 xl:w-[75%] w-full">
               public bodies are actively using our services
             </p>
           </div>
           <div className="carousel__div">
-            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+            <h3 className="font-satoshiBold  text-3xl xl:text-5xl">
               95
               <span className="font-satoshiLight">%</span>
             </h3>
-            <p className="font-satoshiLight my-4 md:w-[75%] w-full">
+            <p className="font-satoshiLight my-4 xl:w-[75%] w-full">
               of our projects are delivered on time with 99% on budget
             </p>
           </div>
           <div className="carousel__div">
-            <h3 className="font-satoshiBold md:text-5xl text-2xl">
+            <h3 className="font-satoshiBold  text-3xl xl:text-5xl">
               9<span className="font-satoshiLight">/10</span>
             </h3>
-            <p className="font-satoshiLight my-4 md:w-[75%] w-full">
+            <p className="font-satoshiLight my-4 xl:w-[75%] w-full">
               of our clients are really happy with the final project results
             </p>
           </div>

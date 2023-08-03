@@ -25,10 +25,12 @@ module.exports = {
         25: "25px",
         23: "23px",
         60: "60px",
+        38: "38px",
         46: "46px",
       },
       colors: {
         scapeGray100: "#F4F5F7",
+        scapeGray200: "#EEEEF2",
         scapeGray300: "#DFDFE3",
         scapeGray400: "#A7A8A9",
         scapeGray700: "#656565",

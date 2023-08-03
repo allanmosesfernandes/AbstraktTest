@@ -71,29 +71,45 @@
   .bodycopy {
     @apply leading-25 md:text-lg  text-scapeGray700 mb-5 font-satoshiLight;
   }
-  .slick-track
-{
+  .slick-track {
     display: flex !important;
-}
+  }
 
-.slick-slide
-{
+  .slick-slide {
     height: inherit !important;
-}
+  }
   /* Futures Carousel */
   .carousel__div {
-    width: 90% !important;
-    min-height: 320px;
+    width: 95% !important;
+    height: 260px;
     margin-left: -15px;
-    display: flex;
-    @apply bg-scapeBlue700 text-white p-12;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    @apply bg-scapeBlue700 text-white p-8;
   }
+  .futuresBG {
+    background-image: url("../assets/images/future/shape.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+  }
+
   @media only screen and (max-width: 1024px) {
     .carousel__div {
       width: 85% !important;
       padding: 2rem;
       margin-bottom: 2rem;
-      height: 150px;
+      height: 200px;
+    }
+    .futuresBG {
+      background-position: bottom;
     }
   }
   .arrowButtonsCarousel {

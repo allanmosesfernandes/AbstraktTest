@@ -11,6 +11,7 @@ import WhyScape from "../components/Navbar/WhyScape";
 import RoadToZero from "../components/Navbar/RoadToZero";
 import BuildingFutures from "../components/Navbar/BuildingFutures";
 import LatestScape from "../components/LatestScape";
+import Footer from "../components/Footer";
 
 const index = (data) => {
   /* Fetch projects from query and pass it as props */
@@ -80,11 +81,11 @@ const index = (data) => {
             </div>
           </div>
         </section>
-        {/* Why Scape */}
-        <WhyScape />
-        <RoadToZero />
+        {/* <WhyScape /> */}
+        {/* <RoadToZero /> */}
         <BuildingFutures />
         <LatestScape />
+        <Footer />
       </main>
     </>
   );
