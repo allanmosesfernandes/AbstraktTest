@@ -22,14 +22,14 @@ function ImageCarousel() {
 
   return (
     <>
-      <div className="image-carousel flex md:flex-col flex-col-reverse">
+      <div className="pl-0 lg:pl-20 image-carousel flex lg:flex-col flex-col-reverse">
         <img
           src={images[currentImageIndex]}
           alt={` ${currentImageIndex + 1}`}
-          className="w-fit"
+          className="w-full h-[120%] object-center object-cover md:min-h-[400px]"
         />
 
-        <div className="controls flex gap-4 my-6">
+        <div className="controls flex gap-4 my-6 ml-4 md:ml-20 lg:ml-0">
           <button
             onClick={goToPreviousImage}
             type="button"
@@ -53,11 +53,8 @@ function ImageCarousel() {
             />
           </button>
         </div>
-        <h2 className="font-satoshiBold w-[50%] text-4xl text-scapeBlue900 mt-10 hidden lg:block">
-          Building a stronger future
-        </h2>
       </div>
-      <div className="md:hidden flex mx-[1rem] my-[-2rem] flex-col bg-scapeBlue900 w-fit p-6 md:pr-[100px] pr-10 font-satoshi gap-6 ">
+      <div className="lg:hidden flex mx-[1rem] md:mx-[5rem] my-[-2rem] flex-col bg-scapeBlue900 w-fit p-6 md:pr-[100px] pr-10 font-satoshi gap-6 ">
         <p className="text-white">Discover the road to net zero with SCAPE</p>
         <a
           to="/"

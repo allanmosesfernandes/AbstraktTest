@@ -29,7 +29,7 @@ function LatestScape() {
   };
 
   return (
-    <section className="relative">
+    <section className="relative ">
       <div className="z-50 relative flex flex-col bg-scapeGray200 py-10 w-full ">
         <div className="futuresBG" />
         <h2 className="font-satoshiBold md:text-4xl text-2xl text-scapeBlue900 pl-4 md:pl-20 ">

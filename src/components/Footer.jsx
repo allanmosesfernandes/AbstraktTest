@@ -12,7 +12,7 @@ import Carbon from "../assets/images/footer/carbon.png";
 function Footer() {
   return (
     <footer className="bg-scapeBlue900 flex flex-col z-50 text-white text-sm font-satoshi ">
-      <div className="ml-4 md:ml-20 py-10 w-[80%] container">
+      <div className="ml-4 md:ml-20 py-10 w-[80%] ">
         <img src={Logo} className="h-10" alt="scape logo" />
         {/* Left Side */}
         <div className="flex md:flex-row flex-col gap-10 w-full border-b-2 pb-10">
