@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  body::-webkit-scrollbar {
-    width: 1em;
-  }
+
   /* fonts */
   @font-face {
     font-family: "Satoshi-Light";
