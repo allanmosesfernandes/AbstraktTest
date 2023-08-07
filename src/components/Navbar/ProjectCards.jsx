@@ -20,7 +20,7 @@ function ProjectCards(props) {
         {projects.map((project, index) => (
           <div
             key={project.id}
-            className="group flex-col font-satoshi carder overflow-hidden xl:min-h-[410px] lg:min-h-[330px] min-h-[300px] cardSwipe"
+            className="group flex-col font-satoshi carder overflow-hidden xl:min-h-[410px] lg:min-h-[330px] min-h-[330px] cardSwipe"
           >
             <GatsbyImage
               image={project.image.asset.gatsbyImage}

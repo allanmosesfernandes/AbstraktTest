@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Fade from "react-reveal/Fade";
+
 import backbtn from "../../assets/images/carousel/backbtn.svg";
 
 function BuildingFutures() {
@@ -53,24 +55,26 @@ function BuildingFutures() {
   return (
     <div className="flex flex-col lg:flex-row gap-6 items-center bg-scapeGray200 mt-[10rem] relative">
       {/* Left Side */}
-      <h2 className="font-satoshiBold w-full text-3xl xl:text-5xl text-scapeBlue900 block pl-4  md:pl-20 absolute top-[-90px]">
-        Building a <br />
-        stronger future
-      </h2>
-      <div className="flex flex-col lg:w-[40%] w-full pb-20">
-        <p className="pl-4 md:pl-20 bodycopy text-[16px] pt-10">
-          Fully compliant with EU, UK and Scottish procurement regulations, our
-          public sector procurement process selects only the best delivery
-          partners available through a robust and rigorous tender process. We’re
-          the first public sector body to adopt the Common Assessment Standards,
-          making it simpler for you to procure your essential projects. Central
-          to delivery is our partner’s extensive local supply chain, ensuring
-          the money you invest locally, stays local.
-        </p>
-        <p className="bodycopy font-satoshiBold pl-4 md:pl-20 font-bold text-[17px] underline decoration-solid text-scapeBlue900">
-          How our partners are selected
-        </p>
-      </div>
+      <Fade bottom>
+        <h2 className="font-satoshiBold w-full text-3xl xl:text-5xl text-scapeBlue900 block pl-4  md:pl-20 absolute top-[-90px]">
+          Building a <br />
+          stronger future
+        </h2>
+        <div className="flex flex-col lg:w-[40%] w-full pb-20">
+          <p className="pl-4 md:pl-20 bodycopy text-[16px] pt-10">
+            Fully compliant with EU, UK and Scottish procurement regulations, our
+            public sector procurement process selects only the best delivery
+            partners available through a robust and rigorous tender process. We’re
+            the first public sector body to adopt the Common Assessment Standards,
+            making it simpler for you to procure your essential projects. Central
+            to delivery is our partner’s extensive local supply chain, ensuring
+            the money you invest locally, stays local.
+          </p>
+          <p className="bodycopy font-satoshiBold pl-4 md:pl-20 font-bold text-[17px] underline decoration-solid text-scapeBlue900">
+            How our partners are selected
+          </p>
+        </div>
+      </Fade>
       {/* Right Side */}
       <div className="z-50 flex flex-col lg:w-[60%] w-full gap-4 px-2 md:px-20 lg:mt-[-15rem] md:mt-[-3rem] mt-[-4rem] relative">
         <Slider {...settings}>

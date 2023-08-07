@@ -49,10 +49,10 @@ const index = (data) => {
 
             {/* Cards Grid */}
           </div>
-          <div className="ml-4 mt-4 lg:ml-20  flex flex-col-reverse md:flex-row  mb-2 lg:mb-10 relative gap-8 w-[85%]">
+          <div className="ml-4 mt-4 lg:ml-20  flex flex-col-reverse lg:flex-row  mb-2 lg:mb-10 relative gap-8 w-[85%]">
             {/* Left Side */}
-            <div className="flex lg:flex-row flex-col border-b-2 border-gray-70  md:items-center gap-6 w-[100%]">
-              <p className="bg-scapeGray700 text-white p-4 font-satoshi text-sm 0 w-fit">
+            <div className="flex lg:flex-row flex-col border-b-2 border-gray-70  lg:items-center gap-6 w-[100%]">
+              <p className="bg-scapeGray700 text-white p-4 font-satoshi text-sm 0 w-fit text-center">
                 {" "}
                 Latest updates{" "}
               </p>
@@ -64,7 +64,7 @@ const index = (data) => {
               </p>
             </div>
             {/* Right Side */}
-            <div className="flex flex-col bg-scapeBlue900 w-[100%] md:w-[40%] p-4 font-satoshi gap-6 md:mt-[-4rem] mt-[-2rem]">
+            <div className="flex flex-col bg-scapeBlue900 w-[100%] lg:w-[40%] p-4 font-satoshi gap-6 lg:mt-[-4rem] mt-[-2rem]">
               <p className="text-white">
                 Prefer to speak with someone at SCAPE?
               </p>
