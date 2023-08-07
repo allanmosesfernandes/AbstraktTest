@@ -28,7 +28,7 @@ function Navbar() {
           <img src={Logo} alt="logo" className="z-[129] w-[170px] md:w-full " />
         </div>
         {/* Links */}
-        <div className="navbar-links hidden md:flex">
+        <div className="navbar-links hidden lg:flex">
           <Link to="/">Frameworks</Link>
           <Link to="/">Leading Procurement</Link>
           <Link to="/">Social Value</Link>
@@ -40,7 +40,7 @@ function Navbar() {
         {/* Hamburger */}
         <button
           className={
-            hamburger ? "hamburger-icon open" : "hamburger-icon md:hidden block"
+            hamburger ? "hamburger-icon open" : "hamburger-icon lg:hidden block"
           }
           type="button"
           onClick={toggleMenu}

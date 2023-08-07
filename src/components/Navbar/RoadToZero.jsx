@@ -28,11 +28,15 @@ function RoadToZero() {
             </p>
             <Link
               to="/"
-              className="bg-white  text-scapeBlue900 py-4 px-6 flex items-center rounded-tl-full rounded-full font-bold font-satoshiBold w-fit contacter"
+              className="bg-white  text-scapeBlue900 py-4 px-6 flex items-center rounded-tl-full rounded-full font-bold font-satoshiBold w-fit contacter "
             >
               Net Zero by SCAPE
               <span>
-                <img src={RightArrow} alt="arrow" className="ml-6 flex" />
+                <img
+                  src={RightArrow}
+                  alt="arrow"
+                  className="ml-6 flex transition-all ease-in-out duration-300 "
+                />
               </span>
             </Link>
           </div>

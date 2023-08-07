@@ -35,16 +35,18 @@ function LatestScape() {
         <h2 className="font-satoshiBold md:text-4xl text-2xl text-scapeBlue900 pl-4 md:pl-20 ">
           The latest from SCAPE
         </h2>
-        <div className="pl-0 lg:pl-20 flex flex-col lg:flex-row my-6 lg:w-[90%] w-full lg:mb-[10rem] mb-[5rem] gap-10 ">
+        <div className="pl-0 lg:pl-20 flex flex-col lg:flex-row my-6 lg:w-[90%] w-full lg:mb-[10rem] mb-[5rem] gap-6 md:gap-2 lg:gap-10 ">
           {/* Left Side */}
           <div className="flex flex-col relative lg:w-[90%] w-full">
-            <div className="relative">
-              <img
-                src={images[currentImageIndex]}
-                alt="placeholder"
-                className="w-full object-cover z-50 relative md:h-full h-[400px]"
-              />
-              <div className="framework-details shadow-lg absolute bottom-[-70%] md:bottom-[-50%] lg:bottom-[-50%] xl:bottom-[-20%] z-50  left-[10px] md:left-[30px] lg:w-[60%] w-[90%] font-satoshi p-6 flex flex-col  border-l-4 bg-white border-scapeYellow400 ">
+            <div className="relative group">
+              <div className="overflow-hidden">
+                <img
+                  src={images[currentImageIndex]}
+                  alt="placeholder"
+                  className="w-full object-cover z-50 relative md:h-full h-[400px] duration-1000 overflow-hidden group-hover:scale-[1.1] ease-in-out transition-all"
+                />
+              </div>
+              <div className="duration-500 group-hover:translate-y-[-3%] framework-details shadow-lg absolute bottom-[-70%] md:bottom-[-50%] lg:bottom-[-40%] xl:bottom-[-20%] z-50  left-[10px] md:left-[30px] md:w-[70%] lg:w-[60%] w-[90%] font-satoshi p-6 flex flex-col  border-l-[6px] bg-white border-scapeYellow400 hover:border-opacity-50">
                 <img
                   src={Logo}
                   alt="logo"
@@ -53,7 +55,7 @@ function LatestScape() {
                 <h4 className="text-scapeBlue700 font-satoshiBold md:w-full w-[60%]">
                   Consultancy Framework | Housing
                 </h4>
-                <p className="text-scapeBlue900 text-3xl lg:w-[60%] w-[80%] my-4">
+                <p className="text-scapeBlue900 text-3xl 2xl:w-[50%] xl:w-[80%] lg:w-[80%] my-4">
                   Winwood Heights, Nottingham
                 </p>
                 <p className="text-scapeGray700 w-[80%] leading-25 text-base mb-6">
@@ -62,20 +64,29 @@ function LatestScape() {
                   residents to live independently with flexible care provision.
                 </p>
                 <button
-                  className="rounded-full flex items-center bg-scapeBlue900 text-white font-satoshiBold text-md py-4 px-8  w-fit"
+                  className="button__hover rounded-full flex items-center bg-scapeBlue900 text-white font-satoshiBold text-md py-4 px-8  w-fit "
                   type="button"
                 >
                   Read case study
-                  <span>
-                    <img src={ArrowRight} alt="arrow" className="ml-6" />
+                  <span className="arrow__blue group-hover:ml-[10px] ease-in-out transition-all duration-500">
+                    <svg
+                      className="ml-6"
+                      strokeWidth=""
+                      width="14"
+                      height="13"
+                      viewBox="0 0 14 13"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7.48322 0.546521L7.48317 0.546572L7.48929 0.552569L13.4505 6.39617L13.4505 6.39623L13.4571 6.40254C13.514 6.4563 13.5147 6.54356 13.4567 6.59844L13.4567 6.59839L13.4505 6.6044L7.48931 12.4474L7.48925 12.4474L7.48281 12.4539C7.42587 12.5118 7.31387 12.5211 7.23869 12.4474L7.23827 12.447C7.18602 12.3959 7.1763 12.2956 7.24262 12.226L12.0585 7.51439L12.9349 6.65699H11.7088H0.665487C0.570725 6.65699 0.5 6.58246 0.5 6.4953C0.5 6.4176 0.561305 6.3427 0.666051 6.34243C0.666127 6.34243 0.666203 6.34243 0.666279 6.34243L11.7088 6.34243H12.9332L12.0588 5.48535L7.23869 0.760799L7.23827 0.760391C7.1821 0.705459 7.18149 0.60865 7.23869 0.552587C7.31363 0.479128 7.42537 0.487836 7.48322 0.546521Z" />
+                    </svg>
                   </span>
                 </button>
               </div>
             </div>
           </div>
           {/* Right Side */}
-          <div className="flex lg:flex-col flex-row justify-between shadow-lg bg-white p-6 w-[90%] lg:w-[15%] lg:mt-0 md:mt-[15rem] mt-[17rem] lg:items-start items-center md:ml-[30px] ml-[10px] relative">
-            <h2 className="transform-origin-top-left text-4xl flex w-full font-satoshi text-scapeGray700 lg:mt-[2rem] mt-0 lg:rotate-[-90deg] rotate-[0deg] ">
+          <div className=" flex lg:flex-col flex-row justify-between shadow-lg bg-white p-6 sm:w-[70%] w-[90%] lg:w-[15%] lg:mt-0 md:mt-[15rem] mt-[17rem] lg:items-start items-center md:ml-[30px] ml-[10px] relative">
+            <h2 className="transform-origin-top-left text-4xl flex w-full font-satoshi text-scapeGray700 lg:mt-[3rem] mt-0 lg:rotate-[-90deg] rotate-[0deg] ">
               <span className="font-bold inline-flex px-2">
                 0{numbers[currentImageIndex]}
               </span>
@@ -86,22 +97,20 @@ function LatestScape() {
                 onClick={goToPreviousImage}
                 type="button"
                 disabled={isPreviousDisabled}
+                className="w-[50px] h-[50px] rounded-full border-[1px] border-scapeGray300 flex items-center justify-center hover:border-black transition-all ease-in-out duration-300"
               >
-                <img
-                  src={backbtn}
-                  alt="back button"
-                  className="arrowButtonsCarousel"
-                />
+                <img src={backbtn} alt="back button" className="" />
               </button>
               <button
                 onClick={goToNextImage}
                 type="button"
                 disabled={isNextDisabled}
+                className="w-[50px] h-[50px] rounded-full border-[1px] border-scapeGray300 flex items-center justify-center hover:border-black transition-all ease-in-out duration-300"
               >
                 <img
                   src={backbtn}
                   alt="back button"
-                  className="arrowButtonsCarousel rotate-180"
+                  className="rotate-180"
                 />
               </button>
             </div>

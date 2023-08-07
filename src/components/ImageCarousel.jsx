@@ -34,23 +34,17 @@ function ImageCarousel() {
             onClick={goToPreviousImage}
             type="button"
             disabled={isPreviousDisabled}
+            className="w-[50px] h-[50px] rounded-full border-[1px] border-scapeGray300 flex items-center justify-center hover:border-black transition-all ease-in-out duration-300"
           >
-            <img
-              src={backbtn}
-              alt="back button"
-              className="arrowButtonsCarousel"
-            />
+            <img src={backbtn} alt="back button" className="" />
           </button>
           <button
             onClick={goToNextImage}
             type="button"
             disabled={isNextDisabled}
+            className="w-[50px] h-[50px] rounded-full border-[1px] border-scapeGray300 flex items-center justify-center hover:border-black transition-all ease-in-out duration-300"
           >
-            <img
-              src={backbtn}
-              alt="back button"
-              className="arrowButtonsCarousel rotate-180"
-            />
+            <img src={backbtn} alt="back button" className="rotate-180" />
           </button>
         </div>
       </div>

@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import Logo from "../assets/images/footer/logo.svg";
 import ArrowT from "../assets/images/nav/arrow.svg";
-import Twitter from "../assets/images/footer/twitter.svg";
-import LinkedIn from "../assets/images/footer/linkedin.svg";
-import Youtube from "../assets/images/footer/youtube.svg";
+import Twitter from "../assets/images/footer/icons/twitter.svg";
+import LinkedIn from "../assets/images/footer/icons/linkedin.svg";
+import Youtube from "../assets/images/footer/icons/youtube.svg";
 import cyber from "../assets/images/footer/essentials.svg";
 import NACF from "../assets/images/footer/NACF.svg";
 import Carbon from "../assets/images/footer/carbon.png";
@@ -26,20 +26,40 @@ function Footer() {
               <br />
               general@scape.co.uk
             </p>
-            <div className="flex lg:flex-row flex-col gap-6">
+            <div className="flex lg:flex-row flex-col gap-6 ml-auto">
               <Link
                 to="/"
-                className="bg-scapeBlue500  text-scapeBlue900 py-4 px-6 flex items-center rounded-tl-full rounded-full font-bold font-satoshiBold w-fit contacter"
+                className="bg-scapeBlue500  text-scapeBlue900 py-4 px-6 flex items-center rounded-tl-full rounded-full font-bold font-satoshiBold w-fit contacter mr-4"
               >
                 Contact us
                 <span>
                   <img src={ArrowT} alt="arrow" className="ml-6 flex" />
                 </span>
               </Link>
-              <div className="flex space-x-4">
-                <img src={Twitter} alt="" className="cursor-pointer" />
-                <img src={LinkedIn} alt="" className="cursor-pointer" />
-                <img src={Youtube} alt="" className="cursor-pointer" />
+              <div className="flex gap-8">
+                <Link
+                  to="/"
+                  className="w-[50px] h-[50px] rounded-[50%] border-[1px] border-scapeGray300 flex items-center justify-center hover:border-scapeBlue500 transition-all ease-in-out duration-300"
+                >
+                  <img
+                    src={Twitter}
+                    alt=""
+                    className="cursor-pointer w-[30px] h-[30px]"
+                  />
+                </Link>
+                <Link
+                  to="/"
+                  className="w-[50px] h-[50px] rounded-[50%] border-[1px] border-scapeGray300 flex items-center justify-center hover:border-scapeBlue500 transition-all ease-in-out duration-300"
+                >
+                  <img src={LinkedIn} alt="" className="cursor-pointer" />
+                </Link>
+                <Link
+                  to="/"
+                  className="w-[50px] h-[50px] rounded-[50%] border-[1px] border-scapeGray300 flex items-center justify-center hover:border-scapeBlue500 transition-all ease-in-out duration-300"
+                >
+                  <img src={Youtube} alt="" className="cursor-pointer" />
+                </Link>
+
               </div>
             </div>
           </div>
