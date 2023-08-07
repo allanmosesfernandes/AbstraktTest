@@ -70,7 +70,7 @@ function BuildingFutures() {
             to delivery is our partner’s extensive local supply chain, ensuring
             the money you invest locally, stays local.
           </p>
-          <p className="bodycopy font-satoshiBold pl-4 md:pl-20 font-bold text-[17px] underline decoration-solid text-scapeBlue900">
+          <p className="bodycopy cursor-pointer font-satoshiBold pl-4 md:pl-20 font-bold text-[17px] underline decoration-solid text-scapeBlue900">
             How our partners are selected
           </p>
         </div>

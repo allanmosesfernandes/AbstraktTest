@@ -97,7 +97,7 @@ function LatestScape() {
                 onClick={goToPreviousImage}
                 type="button"
                 disabled={isPreviousDisabled}
-                className="w-[50px] h-[50px] rounded-full border-[1px] border-scapeGray300 flex items-center justify-center hover:border-black transition-all ease-in-out duration-300"
+                className="lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-[50%] border-[1px] border-scapeGray300 flex items-center justify-center hover:border-black transition-all ease-in-out duration-300"
               >
                 <img src={backbtn} alt="back button" className="" />
               </button>
@@ -105,13 +105,9 @@ function LatestScape() {
                 onClick={goToNextImage}
                 type="button"
                 disabled={isNextDisabled}
-                className="w-[50px] h-[50px] rounded-full border-[1px] border-scapeGray300 flex items-center justify-center hover:border-black transition-all ease-in-out duration-300"
+                className="lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-[50%] border-[1px] border-scapeGray300 flex items-center justify-center hover:border-black transition-all ease-in-out duration-300"
               >
-                <img
-                  src={backbtn}
-                  alt="back button"
-                  className="rotate-180"
-                />
+                <img src={backbtn} alt="back button" className="rotate-180" />
               </button>
             </div>
           </div>
