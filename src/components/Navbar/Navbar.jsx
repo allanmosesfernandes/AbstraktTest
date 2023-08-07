@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <>
       <NavbarUtil />
-      <nav className="flex md:p-5 p-3 z-10">
+      <nav className="flex md:p-5 p-3 z-10 overflow-hidden">
         {/* Logo */}
         <div className="flex items-center ">
           <img src={Logo} alt="logo" className="z-[129] w-[170px] md:w-full " />
@@ -50,7 +50,7 @@ function Navbar() {
           <span className="hamburger-bottom" />
         </button>
 
-        <div className={hamburger ? "menu__custom active" : "menu__custom"}>
+        <div className={hamburger ? "menu__custom active" : "menu__custom hidden"}>
           {/* Mobile Menu Links */}
           <div className="menu-items mt-[5rem] font-satoshiBold">
             <Link to="/" className="menu-item" onClick={toggleMenu}>

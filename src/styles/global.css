@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
   /* fonts */
   @font-face {
     font-family: "Satoshi-Light";
@@ -33,11 +36,17 @@
   }
   /* Swoosh Effect */
   .arrowBlue {
-    fill: #29BDEF;
+    fill: #29bdef;
+  }
+
+  @media only screen and (min-width: 2000px) {
+    .bg {
+      background-size: auto !important;
+    }
   }
   .bg {
     background-image: url("../assets/images/homepage/swoosh.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
     background-position: bottom left;
@@ -115,16 +124,23 @@
     }
   }
 
+  @media only screen and (max-width: 450px) {
+    .carousel__div {
+      width: 90% !important;
+      padding: 2rem 1rem !important;
+    }
+  }
+
   /* Button Hover Effects */
-  .button__hover .arrow__blue{
+  .button__hover .arrow__blue {
     fill: #ffffff;
     stroke: #ffffff;
     transition: all 0.3s ease-in-out;
   }
 
-  .button__hover:hover .arrow__blue{
-    fill: #29BDEF;
-    stroke: #29BDEF;
+  .button__hover:hover .arrow__blue {
+    fill: #29bdef;
+    stroke: #29bdef;
   }
 
   /* Carousel Custom Arrows */
@@ -136,9 +152,7 @@
     z-index: 200;
   }
 
-  
   .button__controller {
-
   }
   .arrowButtonsCarousel {
     width: 30px;

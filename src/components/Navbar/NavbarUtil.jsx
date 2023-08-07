@@ -6,7 +6,7 @@ import Search from "../../assets/images/nav/search.svg";
 function NavbarUtil() {
   return (
     <div className="hidden z-10 lg:flex bg-scapeBlue900  text-scapeGray400 text-xs font-satoshiLight">
-      <div className="ml-auto flex gap-7 items-center">
+      <div className="ml-auto flex gap-7 items-center z-10">
         <Link
           to="/"
           className="border-r pr-6 hover:text-scapeGray300 leading-25"
