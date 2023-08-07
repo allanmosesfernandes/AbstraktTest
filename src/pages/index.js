@@ -22,8 +22,8 @@ const index = (data) => {
       <SEO />
       <Navbar />
       <main className="flex flex-col relative z-10">
-        <div className="bg" />
-        <section>
+        <section className="relative">
+          <div className="bg" />
           {/* Main Title Copy */}
           <div className="ml-4 lg:ml-20 my-8 ">
             <h2 className="font-satoshiBold lg:text-6xl text-4xl mb-2 text-scapeBlue900">
@@ -51,7 +51,7 @@ const index = (data) => {
           </div>
           <div className="ml-4 mt-4 lg:ml-20  flex flex-col-reverse md:flex-row  mb-2 lg:mb-10 relative gap-8 w-[85%]">
             {/* Left Side */}
-            <div className="flex lg:flex-row flex-col border-b-2 border-gray-70  md:items-center gap-6 w-[100%] ">
+            <div className="flex lg:flex-row flex-col border-b-2 border-gray-70  md:items-center gap-6 w-[100%]">
               <p className="bg-scapeGray700 text-white p-4 font-satoshi text-sm 0 w-fit">
                 {" "}
                 Latest updates{" "}
@@ -64,7 +64,7 @@ const index = (data) => {
               </p>
             </div>
             {/* Right Side */}
-            <div className="flex flex-col bg-scapeBlue900 w-[100%] md:w-[30%] p-4 font-satoshi gap-6 md:mt-[-4rem] mt-[-2rem]">
+            <div className="flex flex-col bg-scapeBlue900 w-[100%] md:w-[40%] p-4 font-satoshi gap-6 md:mt-[-4rem] mt-[-2rem]">
               <p className="text-white">
                 Prefer to speak with someone at SCAPE?
               </p>

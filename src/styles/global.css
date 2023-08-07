@@ -176,7 +176,7 @@
     @apply bg-black rounded-full w-10 h-10 flex items-center ml-auto justify-center;
   }
   .navbar-links {
-    @apply flex items-center gap-8 ml-auto font-satoshiBold;
+    @apply flex items-center gap-8 ml-auto font-satoshiBold leading-25;
   }
   .navbar-links a:hover {
     @apply text-scapeGray400;

@@ -22,13 +22,13 @@ function Navbar() {
   return (
     <>
       <NavbarUtil />
-      <nav className="flex md:p-5 p-3">
+      <nav className="flex md:p-5 p-3 z-10">
         {/* Logo */}
         <div className="flex items-center ">
           <img src={Logo} alt="logo" className="z-[129] w-[170px] md:w-full " />
         </div>
         {/* Links */}
-        <div className="navbar-links hidden lg:flex">
+        <div className="navbar-links hidden lg:flex z-10">
           <Link to="/">Frameworks</Link>
           <Link to="/">Leading Procurement</Link>
           <Link to="/">Social Value</Link>

@@ -5,12 +5,18 @@ import Search from "../../assets/images/nav/search.svg";
 
 function NavbarUtil() {
   return (
-    <div className="hidden lg:flex bg-scapeBlue900  text-scapeGray400  font-satoshi  text-xs ">
+    <div className="hidden z-10 lg:flex bg-scapeBlue900  text-scapeGray400 text-xs font-satoshiLight">
       <div className="ml-auto flex gap-7 items-center">
-        <Link to="/" className="border-r pr-6 hover:text-scapeGray300">
+        <Link
+          to="/"
+          className="border-r pr-6 hover:text-scapeGray300 leading-25"
+        >
           Live Procurement{" "}
         </Link>
-        <Link to="/" className="border-r pr-6 hover:text-scapeGray300">
+        <Link
+          to="/"
+          className="border-r pr-6 hover:text-scapeGray300 leading-25"
+        >
           Careers
         </Link>
         {/* Add search box */}
@@ -18,7 +24,7 @@ function NavbarUtil() {
           <input
             type="text"
             placeholder="Search"
-            className="focus:outline-noney border-scapeGray400 focus:border-scapeBlue500 w-[100px] rounded-full p-3 bg-transparent"
+            className="focus:outline-noney border-scapeGray400 focus:border-scapeBlue500 w-[100px] rounded-full p-3 bg-transparent leading-25"
           />
           <span>
             <img
