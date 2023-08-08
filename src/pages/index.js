@@ -25,17 +25,17 @@ const index = (data) => {
         <section className="relative">
           <div className="bg" />
           {/* Main Title Copy */}
-          <div className="ml-4 lg:ml-20 my-8 ">
-            <h2 className="font-satoshiBold lg:text-6xl text-4xl mb-2 text-scapeBlue900">
+          <div className="ml-4 lg:ml-20 my-4 ">
+            <h2 className="font-satoshiBold lg:text-5xl text-4xl mb-2 text-scapeBlue900">
               Power your procurement.{" "}
             </h2>
-            <h2 className="font-satoshi lg:text-6xl text-4xl text-scapeBlue900">
+            <h2 className="font-satoshi lg:text-5xl text-4xl text-scapeBlue900">
               Accelerate your public sector projects.
             </h2>
           </div>
           <div className="bg-scapeGray100 flex flex-col pl-4 lg:pl-14 mx-0 lg:mx-6 mt-[-1rem] leading-normal">
             {/* Body Copy  */}
-            <p className="text-scapeGray700 font-satoshiLight leading-25 text-sm w-[100%] md:w-[90%] xl:w-[50%] lg:w-[70%]  py-6 z-10 xs:pr-0 pr-[1rem]">
+            <p className="text-scapeGray700 font-satoshiLight leading-25 w-[100%] md:w-[90%] xl:w-[60%] lg:w-[70%]  py-6 z-10 xs:pr-0 pr-[1rem] bodycopy">
               Your go-to suite of compliant, direct award, not-for-profit,
               public sector procurement frameworks. SCAPE delivers high quality
               outcomes for you sustainably, at pace, and with social value and

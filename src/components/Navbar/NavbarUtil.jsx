@@ -6,16 +6,16 @@ import Search from "../../assets/images/nav/search.svg";
 function NavbarUtil() {
   return (
     <div className="hidden z-10 lg:flex bg-scapeBlue900  text-scapeGray400 text-xs font-satoshiLight">
-      <div className="ml-auto flex gap-7 items-center z-10">
+      <div className="ml-auto flex gap-4 items-center z-10">
         <Link
           to="/"
-          className="border-r pr-6 hover:text-scapeGray300 leading-25"
+          className="border-r pr-6 hover:text-scapeGray300 leading-25 border-scapeGray400"
         >
           Live Procurement{" "}
         </Link>
         <Link
           to="/"
-          className="border-r pr-6 hover:text-scapeGray300 leading-25"
+          className="border-scapeGray400 border-r pr-6 hover:text-scapeGray300 leading-25"
         >
           Careers
         </Link>

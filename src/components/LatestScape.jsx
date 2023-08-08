@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import ArrowRight from "../assets/images/why/arrowRight.svg";
-import one from "../assets/images/future/background.svg";
 import five from "../assets/images/future/5.png";
 import six from "../assets/images/future/6.png";
 import seven from "../assets/images/future/7.png";
@@ -12,7 +11,7 @@ import backbtn from "../assets/images/carousel/backbtn.svg";
 import two from "../assets/images/carousel/Bitmap.png";
 
 function LatestScape() {
-  const images = [one, five, six, seven];
+  const images = [five, six, seven, five];
   const numbers = [1, 2, 3, 4];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const isPreviousDisabled = currentImageIndex === 0;

@@ -79,7 +79,9 @@
   }
   .bodycopy {
     @apply leading-25 md:text-lg  text-scapeGray700 mb-5 font-satoshiLight;
+    font-size: 17px;
   }
+
   .slick-track {
     display: flex !important;
   }

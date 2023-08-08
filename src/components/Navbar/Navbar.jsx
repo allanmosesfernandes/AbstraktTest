@@ -25,10 +25,10 @@ function Navbar() {
       <nav className="flex md:p-5 p-3 z-10 overflow-hidden">
         {/* Logo */}
         <div className="flex items-center ">
-          <img src={Logo} alt="logo" className="z-[129] w-[170px] md:w-full " />
+          <img src={Logo} alt="logo" className="z-[129] w-[170px] md:w-[150px] " />
         </div>
         {/* Links */}
-        <div className="navbar-links hidden lg:flex z-10">
+        <div className="navbar-links hidden lg:flex z-10 text-sm">
           <Link to="/">Frameworks</Link>
           <Link to="/">Leading Procurement</Link>
           <Link to="/">Social Value</Link>
